@@ -21,6 +21,8 @@ Next activate your virtual enviroment that was made. So you don't interfere with
 .\.venv\Scripts\activate
 
 Next make sure you add pyodbc and azure-identity to the requirements.txt file to get the nessecary packages for communicating with the SQLdatabase
+Also make sure that you have the correct driver installed. You will need "ODBC Driver for SQL Server"
+
 
 Next add these values to the to the local.settings.json file
 
@@ -40,3 +42,25 @@ make sure to fill in the appropriate values
     "CORS": "*"
   }
 }
+
+Next to test it out go to the run and debug menu and click run.
+<img width="1068" height="505" alt="image" src="https://github.com/user-attachments/assets/f19d72b8-2f3a-459c-85cd-7741eab53c2f" />
+
+If you see this the database is communicating correctly
+
+Lets test to see if messages go through now.
+
+Go to your azure portal and go to your Storage Account and go to queue
+
+Click your database and click + Add message
+
+Add a basic message
+<img width="1542" height="827" alt="image" src="https://github.com/user-attachments/assets/d4e1d80e-cfd2-4c9c-bc9c-2b66b321dfbd" />
+
+You should see your terminal look like this
+
+<img width="1483" height="560" alt="image" src="https://github.com/user-attachments/assets/9280c3a8-89de-42b2-ad95-77ae0fd9dd1e" />
+
+where Functions.OrderProcessor is working great and taking in the new orders!
+
+We have successfully made an
