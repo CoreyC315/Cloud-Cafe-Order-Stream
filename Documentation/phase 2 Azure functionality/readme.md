@@ -85,4 +85,8 @@ Lets set up Role Based Access Control (RBAC)
 
 <img width="1572" height="1237" alt="image" src="https://github.com/user-attachments/assets/2d25f9a0-d069-4610-81d7-c573e3a4fdbf" />
 
+Now lets give access to the function to make changes to the database using this query
+
+<img width="2050" height="1237" alt="image" src="https://github.com/user-attachments/assets/d94b5c12-abc5-4120-a6af-7c01dceb4c7b" />
+
 
