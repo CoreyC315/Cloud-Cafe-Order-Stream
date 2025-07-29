@@ -79,4 +79,10 @@ Go to your resource and right click it and push deloy to function app...
 You should see this
 <img width="2012" height="1510" alt="image" src="https://github.com/user-attachments/assets/62e2bc53-6658-497d-8ae1-7020f463c5d1" />
 
+Next since we were just testing we are still using our Admin creds. Lets make sure that we don't have them exposed. 
+
+Lets set up Role Based Access Control (RBAC)
+
+<img width="1572" height="1237" alt="image" src="https://github.com/user-attachments/assets/2d25f9a0-d069-4610-81d7-c573e3a4fdbf" />
+
 
