@@ -66,11 +66,17 @@ where Functions.OrderProcessor is working great and taking in the new orders!
 We have successfully made a working and functioning database now
 
 
+Now lets get this onto Azure
 
+Make an Azure Function App
+<img width="1572" height="2100" alt="Screenshot 2025-07-29 114000" src="https://github.com/user-attachments/assets/044fe5bb-4d2f-42b9-b928-85e606ce7b9f" />
 
+Once deployed go back to VSCode and open up the azure sidebar extension. There are other ways to do this but this is the eaisest to do
 
+Go to your resource and right click it and push deloy to function app...
+<img width="2012" height="1510" alt="image" src="https://github.com/user-attachments/assets/68d6850d-04a0-4f81-bc09-1540b5c482d6" />
 
-
-
+You should see this
+<img width="2012" height="1510" alt="image" src="https://github.com/user-attachments/assets/62e2bc53-6658-497d-8ae1-7020f463c5d1" />
 
 
