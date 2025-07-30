@@ -1,0 +1,16 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "SQL_SERVER_NAME": "<your_sql_server_name>.database.windows.net",
+    "SQL_DATABASE_NAME": "<your_sql_database_name>",
+    "SQL_ADMIN_USER": "<your_sql_admin_username>",
+    "SQL_ADMIN_PASSWORD": "<your_sql_admin_password>",
+    "CONNECTION_STRING_TEMPLATE": "DRIVER={ODBC Driver 17 for SQL Server};SERVER={server};DATABASE={database};UID={user};PWD={password}"
+    // Add any other local environment variables here, e.g., for other services
+  },
+  "Host": {
+    "CORS": "*" // Adjust CORS as needed for local testing
+  }
+}
