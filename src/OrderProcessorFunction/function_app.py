@@ -76,13 +76,15 @@ def save_order_to_database(order_id, item_name, quantity, customer_name, order_d
             logging.warning("Using SQL admin credentials for local database connection. Switch to Managed Identity for Azure deployment.")
             sql_user = os.environ.get("SQL_ADMIN_USER")
             sql_password = os.environ.get("SQL_ADMIN_PASSWORD")
+            # This line for LOCAL TESTING should correctly append UID/PWD
             conn_str = f"{connection_string_template}UID={sql_user};PWD={sql_password};"
             conn = pyodbc.connect(conn_str)
         else:
             logging.info("Attempting to connect to SQL DB using Managed Identity.")
             credential = DefaultAzureCredential()
             token = credential.get_token("https://database.windows.net/.default").token
-            conn_str = f"{connection_string_template}Authentication=ActiveDirectoryAccessToken;"
+            # This line for AZURE DEPLOYMENT should NOT have Authentication attribute in string
+            conn_str = connection_string_template 
             conn = pyodbc.connect(conn_str, attrs_before={1256: token})
 
         cursor = conn.cursor()
