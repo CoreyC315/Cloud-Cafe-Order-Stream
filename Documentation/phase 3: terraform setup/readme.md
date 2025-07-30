@@ -4,7 +4,7 @@ First install terraform and put it in your path
 
 Make a new folder for terraform configurations
 
-Once in put in this code to configure your setup
+Once in put in this code to configure your setup. Make a main.tf
 
 ```bash
 # Configure the AzureRM Provider
@@ -23,4 +23,8 @@ provider "azurerm" {
   features {} # This block is required for the AzureRM provider
 }
 ```
+Save the file then open a terminal and put in
 
+```bash
+terraform init
+```
