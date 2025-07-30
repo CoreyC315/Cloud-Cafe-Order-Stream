@@ -89,4 +89,4 @@ Now lets give access to the function to make changes to the database using this 
 
 <img width="2050" height="1237" alt="image" src="https://github.com/user-attachments/assets/d94b5c12-abc5-4120-a6af-7c01dceb4c7b" />
 
-
+Now that it is deployed putting in manual queues into the storage account that you made, it will get proccessed and put into the database all through azure!
