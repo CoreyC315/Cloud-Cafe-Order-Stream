@@ -136,3 +136,35 @@ resource "random_string" "suffix" {
   numeric = true
 }
 ```
+****UPDATE WITH FINISHED IaC WHEN DONE****
+
+After that make sure you have the proper networking so that you don't get blocked when performing queries.
+
+<img width="1570" height="657" alt="image" src="https://github.com/user-attachments/assets/22c3652d-9db2-4572-bd92-7e7508a722f9" />
+
+Add your client
+
+Next you'll have to add your tables again
+
+perfrom this query to make all the tables
+
+```bash
+CREATE TABLE Orders (
+    OrderId NVARCHAR(50) PRIMARY KEY,
+    ItemName NVARCHAR(100) NOT NULL,
+    Quantity INT NOT NULL,
+    CustomerName NVARCHAR(100),
+    OrderDate DATETIME NOT NULL DEFAULT GETDATE(),
+    Status NVARCHAR(50) NOT NULL,
+    ProcessedByFunctionId NVARCHAR(100) NULL
+);
+```
+
+Next make sure that you have proper access
+```bash
+CREATE USER [cloudcafeproc-tf-3v1ky] FROM EXTERNAL PROVIDER;
+GRANT INSERT ON Orders TO [cloudcafeproc-tf-3v1ky];
+GRANT SELECT ON Orders TO [cloudcafeproc-tf-3v1ky];
+```
+
+
