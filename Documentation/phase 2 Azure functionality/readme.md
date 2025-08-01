@@ -27,7 +27,7 @@ Also make sure that you have the correct driver installed. You will need "ODBC D
 Next add these values to the to the local.settings.json file
 
 make sure to fill in the appropriate values
-
+```bash
 {
   "IsEncrypted": false,
   "Values": {
@@ -42,7 +42,7 @@ make sure to fill in the appropriate values
     "CORS": "*"
   }
 }
-
+```
 Next to test it out go to the run and debug menu and click run.
 <img width="1068" height="505" alt="image" src="https://github.com/user-attachments/assets/f19d72b8-2f3a-459c-85cd-7741eab53c2f" />
 
